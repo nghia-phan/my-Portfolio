@@ -12,6 +12,38 @@
   .fade-in {
     opacity: 1 !important;
 }
+@media (max-width: 530px) {
+  nav {
+    flex-direction: column;
+    align-items: center; /* Canh giữa các phần tử */
+  }
+
+  nav a {
+    margin-bottom: 20px; /* Khoảng cách giữa logo và menu */
+  }
+
+  /* Menu trở thành cột và canh giữa các phần tử */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /*Khoảng cách giữa các mục */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    text-align: center; /* Canh giữa các mục */
+    align-items: center; /* Canh giữa các item trong menu */
+  }
+
+  nav ul li {
+    margin : 0 auto;
+    width: 100%; /* Chiếm toàn bộ chiều rộng của menu */
+    text-align: center;
+  }
+
+  nav ul li a {
+    padding: 10px 0; /* Khoảng cách trên và dưới cho các mục menu */
+  }
+}
+
+
 </style>
 <body>
     <nav class="bg-white shadow-md py-4 px-8 flex items-center justify-between">
@@ -19,7 +51,7 @@
         <a href="#" class="text-2xl font-bold text-blue-500">Portfolio</a>
 
         <!-- Menu -->
-        <ul class="flex space-x-8 text-gray-700 font-medium">
+        <ul class="flex sm:space-x-8 text-gray-700 font-medium">
             <li><a href="#" class="hover:text-blue-500 transition">Home</a></li>
             <li><a href="#" class="hover:text-blue-500 transition">Skill</a></li>
             <li><a href="#" class="hover:text-blue-500 transition">Experience</a></li>
